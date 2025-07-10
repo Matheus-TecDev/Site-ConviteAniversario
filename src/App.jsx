@@ -1,8 +1,13 @@
-import "./App.css";
+import React from 'react';
+import { ChevronDown } from 'lucide-react';
+import './App.css';
 
 export default function App() {
   const waLink = `https://wa.me/558586868964?text=${encodeURIComponent(
-    "Oii Celinha, pode confirmar minha presença no aniversário da nossa princesa tá ?"
+    'Oii Celinha, pode confirmar minha presença no aniversário da nossa princesa tá ?'
+  )}`;
+  const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    'Churrascaria Nativas Grill Fortaleza'
   )}`;
 
   return (
@@ -17,24 +22,34 @@ export default function App() {
           <p className="datetime">13&nbsp;de&nbsp;julho&nbsp;de&nbsp;2025 • 18:30</p>
           <button
             className="rsvp-btn"
-            onClick={() => window.open(waLink, "_blank")}
+            onClick={() => window.open(waLink, '_blank')}
           >
             Confirmar Presença
           </button>
         </div>
+
+        {/* ←← Três setas à esquerda */}
+        <ChevronDown className="fancy-arrow arrow-left-top" aria-hidden="true" />
+        <ChevronDown className="fancy-arrow arrow-left" aria-hidden="true" />
+        <ChevronDown className="fancy-arrow arrow-left-bottom" aria-hidden="true" />
+
+        {/* ←← Três setas à direita */}
+        <ChevronDown className="fancy-arrow arrow-right-top" aria-hidden="true" />
+        <ChevronDown className="fancy-arrow arrow-right" aria-hidden="true" />
+        <ChevronDown className="fancy-arrow arrow-right-bottom" aria-hidden="true" />
       </section>
 
       {/* MENSAGEM DA ANIVERSARIANTE */}
       <section className="container">
         <h3 className="section-title">Mensagem da Aniversariante</h3>
         <p className="message-text">
-          Oi, gente! 😊<br />
-          Quero todo mundo juntinho dia 13 de julho, às 18h30, lá no Nativas Grill
-          em Fortaleza. Vai ter aquele rodízio delicioso, muita risada e a melhor
-          companhia: vocês!<br /><br />
-          Confirma que vai participar desse dia tão especial pra mim no WhatsApp
-          da minha mamãe, assim ela já vai organizando tudo direitinho. Vai ser
-          incrível ter cada um de vocês por lá! 💖<br /><br />
+          Ei, gente! 😊<br /><br />
+          Quero todo mundo juntinho dia 13 de julho, às 18h30, lá no Nativas Grill em
+          Fortaleza. Vai ter aquele rodízio delicioso, muita risada e a melhor companhia:
+          vocês!<br /><br />
+          Confirma que vai participar desse dia tão especial pra mim no WhatsApp da
+          minha mamãe, assim ela já vai organizando tudo direitinho. Vai ser incrível
+          ter cada um de vocês por lá! 💖<br /><br />
           Beijinhos,<br />
           Maria Eduarda
         </p>
@@ -45,34 +60,32 @@ export default function App() {
         <div className="card">
           <span>📅</span>
           <p>
-            Domingo
-            <br />
+            Domingo<br />
             <strong>13/07/2025</strong>
           </p>
         </div>
         <div className="card">
           <span>🕡</span>
           <p>
-            Às
-            <br />
+            Às<br />
             <strong>18:30</strong>
           </p>
         </div>
-        <div className="card">
-          <span>📍</span>
-          <p>
-            Nativas Grill
-            <br />
-            <strong>Fortaleza (Rodízio)</strong>
-          </p>
-          <a
-            href="https://www.google.com/maps/place/Churrascaria+Nativas+Grill+%7C+Fortaleza+%7C+Restaurante+%7C+Rod%C3%ADzio/@-3.7352136,-38.4902896,17z"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Ver mapa
-          </a>
-        </div>
+        <a
+          href={mapsLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-link"
+        >
+          <div className="card">
+            <span>📍</span>
+            <p>
+              Nativas Grill<br />
+              <strong>Fortaleza (Rodízio)</strong>
+            </p>
+            <p className="map-text">Ver mapa</p>
+          </div>
+        </a>
       </section>
 
       {/* SOBRE O LOCAL DO ANIVERSÁRIO */}
@@ -97,7 +110,7 @@ export default function App() {
         <h3>Confirme sua presença</h3>
         <button
           className="rsvp-btn"
-          onClick={() => window.open(waLink, "_blank")}
+          onClick={() => window.open(waLink, '_blank')}
         >
           Enviar via WhatsApp
         </button>
