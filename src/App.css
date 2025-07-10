@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+  /* Paleta teen, feminina e vibrante */
+  --rosa:#FF6F91;
+  --rosa-escuro:#E55778;
+  --lavanda:#B388FF;
+  --amarelo:#FFE882;
+  --cinza:#FFF8FC;
+  --preto:#1E1E1E;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+/* ========================= Hero ========================= */
+.hero{
+  height:100vh;
+  background:url('/assets/bg.jpg') center/cover fixed;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(135deg,rgba(255,111,145,.75),rgba(179,136,255,.75));
+  z-index:0;
+}
+.overlay{
+  position:relative;
+  z-index:1;
+  padding:2rem;
+  width:100%;
+}
+.title{
+  font-family:'Pacifico', cursive !important;
+  font-size:clamp(2.8rem,7vw,4.5rem);
+  color:var(--amarelo);
+  animation:fadeSlide 1s ease-out;
+  text-shadow:0 4px 10px rgba(0,0,0,.25);
+}
+.subtitle{
+  font-size:clamp(1.3rem,3.5vw,2.2rem);
+  margin-top:.5rem;
+  color:#fff;
+}
+.name{
+  color:var(--amarelo) !important;
+}
+.datetime{
+  margin:1rem 0 2rem;
+  color:#fff;
+  letter-spacing:.5px;
+  font-weight:500;
+}
+
+/* Botão RSVP */
+.rsvp-btn{
+  background:var(--rosa);
+  color:#fff;
+  border:none;
+  padding:1rem 2.5rem;
+  font-size:1rem;
+  border-radius:50px;
+  cursor:pointer;
+  transition:transform .25s cubic-bezier(.25,.8,.25,1), box-shadow .25s;
+  box-shadow:0 4px 15px rgba(255,111,145,.4);
+  animation:pop 2s infinite ease-in-out;
+}
+.rsvp-btn:hover{
+  transform:translateY(-4px) scale(1.05);
+  box-shadow:0 6px 18px rgba(255,111,145,.55);
+}
+
+/* ========= Text messages styling ========= */
+.message-text {
+  background: var(--cinza);
+  padding: 1.5rem;
+  border-left: 5px solid var(--lavanda);
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--preto);
+  margin: 1.5rem 0 2rem !important;
+  white-space: pre-line !important;
+  word-break: break-word !important;
+}
+
+
+/* ========= Seções internas ========= */
+.container{
+  width:min(92%,1200px);
+  margin-inline:auto;
+  padding:4rem 0;
+}
+
+/* Detalhes grid */
+.details{
+  display:grid;
+  gap:1.5rem;
+}
+@media(min-width:700px){
+  .details{grid-template-columns:repeat(3,1fr);}  
+}
+.card{
+  background:var(--cinza);
+  padding:2rem;
+  border-radius:16px;
+  text-align:center;
+  box-shadow:0 4px 16px rgba(0,0,0,.05);
+  transition:transform .25s, box-shadow .25s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+.card span{
+  font-size:2.2rem;
+}
+.card a{
+  display:inline-block;
+  margin-top:.75rem;
+  color:var(--rosa-escuro);
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* Seção títulos */
+.section-title{
+  font-family:'Pacifico', cursive !important;
+  font-size:2rem;
+  color:var(--rosa-escuro);
+  text-align:center;
+  margin-bottom:1.5rem;
+}
+
+/* RSVP final */
+.rsvp-final{
+  background:var(--lavanda);
+  color:#fff;
+  text-align:center;
+  padding:3rem 1rem;
+}
+.rsvp-final h3{
+  font-family:'Pacifico', cursive !important;
+  font-size:clamp(1.6rem,4vw,2.6rem);
+  margin-bottom:1.5rem;
+  text-shadow:0 3px 6px rgba(0,0,0,.2);
+}
+footer{
+  background:var(--rosa-escuro);
+  color:#fff;
+  text-align:center;
+  padding:1rem;
+  font-size:1rem;
+}
+
+/* ========= Animações ========= */
+@keyframes fadeSlide{
+  0%{opacity:0; transform:translateY(25px);} 
+  100%{opacity:1; transform:translateY(0);} 
+}
+@keyframes pop{
+  0%,100%{transform:translateY(0) scale(1);} 
+  50%{transform:translateY(-3px) scale(1.05);} 
+}

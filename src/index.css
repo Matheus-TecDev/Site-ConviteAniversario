@@ -1,0 +1,26 @@
+/* index.css - Minimal básico para não atrapalhar o App.css e carregar fontes customizadas */
+
+/* Importa as fontes usadas no App.css */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body sem tipografia global, apenas fluindo naturalmente */
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  /* evita sobrepor fontes específicas do App.css */
+}
+
+/* Links básicos, sem estilos adicionais */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Deixa o restante livre para o App.css definir tudo */
