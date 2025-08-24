@@ -41,7 +41,7 @@ Um projeto simples e criativo, unindo programação e design para transformar a 
 
 	```bash
 	git clone https://github.com/Matheus-TecDev/Convite-Aniversario.git
-	
+	```
 Entrar na pasta
 
 	cd Convite-Aniversario
@@ -59,7 +59,10 @@ Rodar o projeto
 - [LinkedIn](https://www.linkedin.com/in/matheus-freire-martins-da-costa-318622376/) 
  
 📫 Contato: matheus.tecnodev@gmail.com  
+
+---
 	
 ✨ Inspiração
+
 Esse projeto foi feito por diversão, como um presente digital de aniversário.
 Mostra como a tecnologia pode trazer criatividade e estilo para momentos pessoais.
