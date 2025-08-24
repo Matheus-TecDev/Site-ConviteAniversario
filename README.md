@@ -1,12 +1,65 @@
-# React + Vite
+# 🧩 Convite de Aniversário  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Descrição  
 
-Currently, two official plugins are available:
+O **Convite de Aniversário** foi desenvolvido como presente especial 🎉 para minha irmã, utilizando **Vite** para garantir leveza e modernidade.  
+Um projeto simples e criativo, unindo programação e design para transformar a data em algo memorável.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🎮 Preview  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+![Preview do Projeto](src/assets/Convite.png)
+
+👉 [Acessar agora na Vercel](https://site-convite-aniversario.vercel.app/)  
+
+[![Deploy na Vercel](https://vercel.com/button)](https://site-convite-aniversario.vercel.app/)  
+
+---
+
+## ⚡ Funcionalidades  
+
+- Visual estilizado e responsivo.  
+- Estrutura moderna em **Vite**.  
+- Código limpo e organizado.  
+- Criado como experiência digital personalizada.  
+
+---
+
+## 📚 Tecnologias utilizadas  
+
+- **Vite** ⚡  
+- **HTML5** 🧱  
+- **CSS3** 🎨  
+- **JavaScript** 📜  
+
+---
+
+## 🚀 Como usar  
+
+1. **Clonar o repositório**  
+
+	```bash
+	git clone https://github.com/Matheus-TecDev/Convite-Aniversario.git
+	
+Entrar na pasta
+
+	cd Convite-Aniversario
+	
+Instalar dependências
+	
+	npm install
+Rodar o projeto
+
+	npm run dev
+	
+## 👨‍💻 Autores
+
+- [Matheus Freire](https://github.com/Matheus-TecDev)  
+- [LinkedIn](https://www.linkedin.com/in/matheus-freire-martins-da-costa-318622376/) 
+ 
+📫 Contato: matheus.tecnodev@gmail.com  
+	
+✨ Inspiração
+Esse projeto foi feito por diversão, como um presente digital de aniversário.
+Mostra como a tecnologia pode trazer criatividade e estilo para momentos pessoais.
