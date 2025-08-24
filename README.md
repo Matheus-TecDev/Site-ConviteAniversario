@@ -9,7 +9,7 @@ Um projeto simples e criativo, unindo programação e design para transformar a 
 
 ## 🎮 Preview  
 
-![Preview do Projeto](./src/assets/Convite.png)
+![Preview do Projeto](./src/assets/preview.png)
 
 👉 [Acessar agora na Vercel](https://site-convite-aniversario.vercel.app/)  
 
