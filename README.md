@@ -1,4 +1,4 @@
-# 🧩 Convite de Aniversário  
+# 🥳 Convite de Aniversário  
 
 ## 📖 Descrição  
 
@@ -41,7 +41,7 @@ Um projeto simples e criativo, unindo programação e design para transformar a 
 
 	```bash
 	git clone https://github.com/Matheus-TecDev/Convite-Aniversario.git
-	```
+ 
 Entrar na pasta
 
 	cd Convite-Aniversario
