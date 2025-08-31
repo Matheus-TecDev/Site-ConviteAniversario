@@ -42,14 +42,15 @@ Um projeto simples e criativo, unindo programação e design para transformar a 
 	```bash
 	git clone https://github.com/Matheus-TecDev/Convite-Aniversario.git
  
-Entrar na pasta
+2. **Entrar na pasta**
 
 	cd Convite-Aniversario
 	
-Instalar dependências
+3. **Instalar dependências**
 	
 	npm install
-Rodar o projeto
+
+4. **Rodar o projeto**
 
 	npm run dev
 	
